@@ -1,0 +1,14 @@
+# Agent configuration parameters
+
+arxiv:
+  category: "cs.AI"
+  max_results: 200
+
+ranking:
+  top_n: 20
+
+report:
+  output_dir: "reports"
+
+schedule:
+  interval_hours: 48
