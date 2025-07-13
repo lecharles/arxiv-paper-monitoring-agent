@@ -1,5 +1,9 @@
-# AI Paper Agent - Quick Test Implementation
-# This is a minimal working version for immediate testing
+"""
+Quick Test Implementation: Minimal end-to-end pipeline to fetch, analyze, rank, and generate a markdown report of AI papers from ArXiv.
+
+Usage:
+    python quick_test_implementation.py
+"""
 
 import arxiv
 import re
@@ -234,8 +238,8 @@ This report analyzes the top {len(analyses)} most relevant AI papers from ArXiv'
 
 ## Top {len(analyses)} Papers
 
-| Rank | Title | Grade | Key Innovation |
-|------|-------|-------|----------------|
+| Rank | Title | Grade | Link |
+|------|-------|-------|------|
 """
         
         # Add table rows

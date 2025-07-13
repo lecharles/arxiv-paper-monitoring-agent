@@ -1,14 +1,23 @@
 # Agent configuration parameters
 
+# ArXiv API settings
 arxiv:
+  # Category code to monitor (e.g. cs.AI)
   category: "cs.AI"
+  # Maximum number of papers to fetch per run
   max_results: 200
 
+# Ranking settings
 ranking:
+  # Number of top papers to include in the report
   top_n: 20
 
+# Report settings
 report:
+  # Output directory for markdown reports
   output_dir: "reports"
 
+# Scheduler settings
 schedule:
+  # Interval in hours between automated runs
   interval_hours: 48

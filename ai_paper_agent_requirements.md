@@ -160,9 +160,9 @@ python main.py --force-refresh
 
 ## Top 20 Papers
 
-| Rank | Title | Grade | Relevance | Key Innovation |
-|------|-------|-------|-----------|----------------|
-| 1    | ...   | 9/10  | ...       | ...            |
+| Rank | Title | Grade | Relevance | Link |
+|------|-------|-------|-----------|------|
+| 1    | ...   | 9/10  | ...       | [arXivID](URL) |
 
 ## Detailed Analysis
 
