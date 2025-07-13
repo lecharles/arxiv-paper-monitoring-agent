@@ -36,3 +36,26 @@ Reports will be written to the `reports/` directory by default.
    ```bash
    python scheduler.py
    ```
+
+## Usage
+
+After cloning the repository and activating the virtual environment, you can run the agent and generate reports using these commands:
+
+```bash
+# Activate your venv (macOS/Linux)
+source venv/bin/activate
+
+# Dry‑run (test mode) without writing reports
+python main.py --test
+
+# Full run: fetch, analyze, and generate markdown report
+python main.py --run
+
+# Optional flags:
+python main.py --from-date YYYY-MM-DD --to-date YYYY-MM-DD --force-refresh
+
+# Schedule periodic monitoring (every 48 hours)
+python scheduler.py
+```
+
+Generated markdown reports (including the new **Link** column for direct ArXiv URLs) will appear in the `reports/` directory as `ai_papers_analysis_YYYY-MM-DD.md`.
