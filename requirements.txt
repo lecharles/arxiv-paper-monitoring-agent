@@ -6,3 +6,5 @@ nltk
 schedule
 python-dotenv
 openai
+pyyaml
+python-dateutil

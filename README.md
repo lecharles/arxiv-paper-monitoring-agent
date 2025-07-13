@@ -32,3 +32,7 @@ Automate monitoring of ArXiv's AI category, filter and rank new research papers,
    ```
 
 Reports will be written to the `reports/` directory by default.
+6. **Schedule automated runs**:
+   ```bash
+   python scheduler.py
+   ```
