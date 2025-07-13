@@ -1,0 +1,8 @@
+arxiv
+requests
+beautifulsoup4
+pandas
+nltk
+schedule
+python-dotenv
+openai

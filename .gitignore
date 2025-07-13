@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment and environment files
+venv/
+.env
+
+# Reports, caches, and config
+reports/
+*.json
+config.yaml
+
+# Editor directories
+.vscode/
+.idea/
