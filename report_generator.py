@@ -21,12 +21,13 @@ def generate_report(analyses, output_path: str) -> str:
     # Top papers table
     report.append('## Top Papers')
     report.append('')
-    report.append('| Rank | Date       | Title                           | Grade | Relevance                                   |')
-    report.append('|------|------------|---------------------------------|-------|----------------------------------------------|')
+    report.append('| Rank | Date       | Title                           | Grade | Relevance                                   | Link |')
+    report.append('|------|------------|---------------------------------|-------|----------------------------------------------|------|')
     for a in analyses:
         title_short = (a.title[:30] + '...') if len(a.title) > 30 else a.title
+        link = f'[{a.arxiv_id}]({a.url})'
         report.append(
-            f'| {a.rank:<4} | {a.date:<10} | {title_short:<31} | {a.grade}/10 | {a.relevance:<44} |'
+            f'| {a.rank:<4} | {a.date:<10} | {title_short:<31} | {a.grade}/10 | {a.relevance:<44} | {link} |'
         )
 
     # Detailed analysis
