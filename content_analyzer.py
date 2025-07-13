@@ -10,6 +10,7 @@ class PaperAnalysis:
     """Data structure for storing analysis results for a single paper."""
     rank: int = 0
     title: str = ""
+    date: str = ""             # Publication date (YYYY-MM-DD)
     description: str = ""
     relevance: str = ""
     use_cases: List[str] = None
@@ -68,6 +69,7 @@ def analyze_papers(papers) -> List[PaperAnalysis]:
         score = calculate_relevance_score(paper)
         analysis = PaperAnalysis(
             title=paper.title,
+            date=paper.published.date().isoformat(),
             description=_extract_description(paper.summary),
             relevance=_assess_relevance(paper),
             use_cases=_extract_use_cases(paper),
